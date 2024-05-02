@@ -1,13 +1,13 @@
 package peaksoft.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+
+@RequiredArgsConstructor
 @Component
 public class Ocean1 {
-
-    @Autowired
-    private Island2 island;
+    private final Island2 island;
 
     @Override
     public String toString() {
